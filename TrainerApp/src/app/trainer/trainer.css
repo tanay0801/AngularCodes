@@ -1,0 +1,39 @@
+.success-msg{
+    color: green;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "SF Pro Display", "Inter", sans-serif;
+}
+
+form {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+input[type="text"], input[type="submit"] {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0f0;
+}
+
+input[type="checkbox"] {
+  accent-color: #0f0;
+}
+
+.success-msg {
+  color: #0f0;
+  font-weight: 600;
+  margin-top: 10px;
+}

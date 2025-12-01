@@ -1,0 +1,17 @@
+<div class="success-msg">
+    {{ msg }}
+</div>
+
+<form [formGroup] = "trainer" (ngSubmit) = "save()">
+    <br>
+    First Name : <input type="text" formControlName = "firstName">
+    <br>
+    Last Name : <input type="text" formControlName = "lastName">
+    <br>
+    Skill :
+    <div formArrayName = "knownSkills" *ngFor = "let skill of Skills; index as i">
+        <input type="checkbox" [formControlName] = "i">
+        {{Skills[i].name}} &nbsp;&nbsp;&nbsp;
+    </div>
+    <input type="submit" value="submit"><br>
+</form>
